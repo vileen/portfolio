@@ -1,0 +1,282 @@
+@import (less) './font-awesome.min.css';
+
+body {
+  background: grey;
+}
+
+.menu-brand, .menu-item a {
+  color: white;
+  font-weight: bold;
+}
+
+.active {
+  a {
+    color: #455A64;
+  }
+  background-color: #E3F2FD;
+}
+
+.menu-brand:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.menu-item a:hover {
+  color: #37474F;
+  background-color: #BBDEFB!important;
+}
+
+.bg-info {
+  background-color: teal;
+}
+
+.navbar-brand.menu-item:hover {
+  color: white;
+}
+
+.bg-default {
+  background-color: white;
+}
+
+.button-container {
+  text-align: center;
+
+  button {
+    margin: 0 auto;
+  }
+}
+
+.custom-star {
+  border: 0;
+  border-top: 5px solid white;
+}
+
+.custom-star:after {
+  content: '\f121';
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 10px;
+  font-size: 3em;
+  right: -65px;
+}
+
+.custom-star-dark {
+  border-color: #514B4B!important;
+}
+
+.custom-star-dark:after {
+  left: 0;
+  background-color: #BBDEFB;
+}
+
+#about {
+  overflow: auto;
+  height: 100%;
+  text-align: right;
+  padding: 120px 59px 25px 40px;
+  background: #c9c9c9;
+  color: white;
+
+  .about-text {
+    border-right: 3px solid teal;
+    padding-right: 30px;
+  }
+
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .custom-star {
+    margin-right: 55px;
+  }
+
+  .about-text p {
+    font-size: 1.6em;
+    color: white;
+  }
+
+  .about-footer {
+    color: white;
+    font-size: 1.8em;
+  }
+}
+
+.img-border {
+  border: 7px solid white;
+}
+
+h2 {
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+section {
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio {
+  overflow: auto;
+  background: #BBDEFB;
+  color: #514B4B;
+  margin: 0;
+
+  hr {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+
+    li {
+      flex: 1;
+      flex-basis: 300px;
+    }
+  }
+
+  .portfolio-image {
+    border: 5px solid white;
+    width: 90%;
+    margin: auto auto 20px auto;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  text-align: right;
+  margin: 25px auto 30px;
+  max-width: 512px;
+}
+
+header nav {
+  background-color: teal;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#footer-allrights {
+  background-color: #D9EDF7;
+}
+
+#contact {
+  overflow: auto;
+  color: white;
+  background: #c9c9c9;
+
+  hr {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .custom-star:after {
+    background-color: #c9c9c9;
+    left: 0;
+
+  }
+
+  .contact-info {
+    font-size: 1.8em;
+    text-align: left;
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    p:nth-child(3) {
+      margin-top: 280px;
+    }
+  }
+
+  #contactform {
+    color: grey;
+
+    input, textarea {
+      background-color: inherit;
+      border: none;
+      border-bottom: 2px solid darkgrey;
+      padding: 6px 0;
+      font-size: 2em;
+      width: 100%;
+      color: grey;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+    }
+
+    div {
+      color: teal;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    button {
+      padding: 6px 12px;
+      font-size: 1.1em;
+    }
+  }
+}
+
+footer {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.3em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: teal;
+  overflow: auto;
+  padding: 10px 0;
+  padding-top: 30px;
+
+  h3 {
+    font-weight: bold;
+  }
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+
+    a {
+      width: 50px;
+      height: 50px;
+      border: 2px solid white;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 47px;
+      color: white;
+      align-content: text-bottom;
+    }
+  }
+
+  a:hover {
+    background-color: white;
+    color: teal;
+  }
+
+  a {
+    color: teal;
+  }
+  a:hover {
+    color: teal;
+  }
+
+  #footer-above {
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+}
